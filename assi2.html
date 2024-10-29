@@ -1,0 +1,20 @@
+<html>
+<head>
+  <title>mCalculate the BMI</title>
+</head>
+<body>
+  <script>
+  function CalculateBMI() {
+    var weight = prompt("Enter your weight in kg:");
+    var height = prompt("Enter your height in meters:");
+    var bmi = weight/(height*height);
+    document.getElementById("pr").innerHTML = "Your BMI IS:"+(Math.round(bmi * 100) / 100);
+  }
+  </script>
+</head>
+<p id="pr"></p>
+<button onClick="CalculateBMI();" >Calculate BMI</button>
+
+
+</body>
+</html>
